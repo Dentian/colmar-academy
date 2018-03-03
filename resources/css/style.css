@@ -1,22 +1,183 @@
 
 
 
+body{
+
+}
+.alignment{
+  width: auto;
+
+}
 
 
-
-
-
-.nav {
+/* Header */
+.navbar {
   background-color: white;
   height: 64px;
+  margin: 0 24px;
 
 
+
+}
+.navbar-right{
+  padding: 0;
+  width: 30%;
+}
+.navbar-right a {
+  margin: 0 0 0 16px;
 
 }
 .btn {
   border-radius: 0;
+
 }
 
 .jumbotron img{
   width: 60%;
+  margin: 0 24px 0 24px;
+  height: auto;
+
+}
+.jumbotron{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+/* Practice */
+.practice {
+  display: flex;
+  justify-content: center;
+}
+
+.practice .left {
+  width: 60%;
+  padding: 32px 24px;
+
+
+}
+.practice .left img{
+  width: 100%;
+}
+.practice .left img, .practice .left h1 {
+  margin-bottom: 32px;
+}
+
+.practice .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgrey;
+}
+
+.practice .right section{
+  display: flex;
+  align-items: center;
+}
+.practice .right section img{
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.orientation{
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 1px;
+}
+.campus{
+  border-top: 1px solid lightgrey;
+}
+.lecture{
+  background-color: lightgrey;
+}
+
+/* Start Learning */
+.start-learning{
+  background-color: lightgrey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 32px;
+}
+.start-learning-images{
+  margin: 32px 72px;
+  width: 100%;
+
+}
+.top .bottom {
+  border: 1px solid black;
+}
+article{
+    width: 30%;
+    margin:;
+    padding: 0 16px;
+}
+article img{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+}
+article section{
+  text-align: left;
+  background-color: white;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+article section h2{
+  padding: 16px 16px 0 16px;
+}
+
+article section p{
+  padding: 8px 16px 0 16px;
+}
+
+
+
+/* Thesis Exhibit */
+.thesis-title{
+  text-align: center;
+}
+.thesis-title h1{
+  padding: 32px 0;
+}
+.thesis-exhibit {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.thesis-exhibit .left {
+  width: 60%;
+  padding: 32px 24px;
+
+
+}
+.thesis-exhibit .left video{
+  width: 100%;
+}
+.thesis-exhibit .left video, .thesis-exhibit .left h2 {
+  margin-bottom: 32px;
+}
+
+.thesis-exhibit .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-exhibit .right section{
+  display: flex;
+  align-items: center;
+}
+.thesis-exhibit .right section img{
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+#fisma{
+  background-color: lightgrey;
 }
