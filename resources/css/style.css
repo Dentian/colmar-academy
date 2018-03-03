@@ -1,35 +1,35 @@
-
-
-
 body{
-
 }
 .alignment{
   width: auto;
-
 }
 
+.mobile {
+  display: none;
+}
 
 /* Header */
+.navbar-brand{
+  text-transform: uppercase;
+}
+
 .navbar {
   background-color: white;
   height: 64px;
   margin: 0 24px;
-
-
-
 }
+
 .navbar-right{
   padding: 0;
   width: 30%;
 }
+
 .navbar-right a {
   margin: 0 0 0 16px;
-
 }
+
 .btn {
   border-radius: 0;
-
 }
 
 .jumbotron img{
@@ -42,7 +42,38 @@ body{
   display: flex;
   text-align: center;
   align-items: center;
+  background-color: lightgrey;
 }
+
+@media only screen and (max-width: 470px) {
+  .mobile{
+    display: flex;
+
+  }
+  .computer{
+    display: none;
+  }
+  .jumbotron img{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .jumbotron {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .jumbotron .container-fluid h1 .jumbotron .container-fluid p {
+    margin-top: 32px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 24px 0 32px 0;
+  }
+
+}
+
 
 /* Practice */
 .practice {
@@ -53,12 +84,12 @@ body{
 .practice .left {
   width: 60%;
   padding: 32px 24px;
-
-
 }
+
 .practice .left img{
   width: 100%;
 }
+
 .practice .left img, .practice .left h1 {
   margin-bottom: 32px;
 }
@@ -90,6 +121,28 @@ body{
 .lecture{
   background-color: lightgrey;
 }
+
+.practice-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .learning-computer{
+    display: none;
+  }
+  .practice-mobile{
+    display: flex;
+    flex-direction: column;
+    margin:0px 16px 32px 16px;
+  }
+  .practice-mobile section img{
+    width: 100%;
+  }
+  .practice-mobile section div{
+    padding: 32px 0 32px 0;
+
+  }
+ }
 
 /* Start Learning */
 .start-learning{
@@ -134,7 +187,37 @@ article section p{
   padding: 8px 16px 0 16px;
 }
 
+.learning-mobile {
+  display: none;
 
+}
+
+@media only screen and (max-width: 470px) {
+  .computer{
+    display: none;
+  }
+  .learning-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .learning-mobile h1{
+    padding-top: 32px;
+    border-top: 1px solid lightgrey;
+  }
+  .learning-mobile div{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 32px 16px;
+
+  }
+  .learning-mobile div h2{
+    background-color: lightgrey;
+    padding: 16px 16px 24px 16px;
+    margin-bottom: 8px;
+    }
+}
 
 /* Thesis Exhibit */
 .thesis-title{
@@ -152,7 +235,6 @@ article section p{
 .thesis-exhibit .left {
   width: 60%;
   padding: 32px 24px;
-
 
 }
 .thesis-exhibit .left video{
@@ -180,4 +262,54 @@ article section p{
 
 #fisma{
   background-color: lightgrey;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .thesis-exhibit .right,   .thesis-exhibit p, .thesis-exhibit h2{
+    display: none;
+  }
+  .thesis-title h1{
+    padding: 32px 0 16px 0;
+    border-top: 1px solid lightgrey;
+  }
+  .thesis-title, .thesis-exhibit .left{
+    width: 100%;
+    height: auto;
+  }
+
+}
+/* Footer */
+footer{
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+
+
+}
+footer .left {
+  margin-left: 24px;
+}
+
+footer .right{
+  display: flex;
+
+}
+
+footer .right p{
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 470px) {
+footer{
+  border: 0;
+}
+footer .right{
+  display: none;
+}
+footer .left{
+  margin: 16px;
+}
+
 }
